@@ -1,0 +1,39 @@
+body {
+    font: 18px arial, sans-serif;
+    /* background-image: linear-gradient(rgba(0, 0, 255,0.5), rgba(255, 255, 0, 0.5)), url("../images/tennessee.png"); */
+    background:  url("../images/mountains.jpg"), no-repeat;
+    background-size: cover;
+    
+    
+}
+.wrapper {
+    width: 100%;
+    color: #ffffff;
+}
+/*Buttons*/
+#display {
+    background:  #659A98;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #bbb;
+}
+#submit {
+    background:  #659A98;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #bbb;
+    width: 85vw;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}

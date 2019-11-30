@@ -1,21 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tennessee Trivia Game</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"> </script>
-    <!----script src="https://ajax.googleapis.com/ajax/jquery/3.4.1/jquery.min.js"></script-->
-<body>
-<div id="wrapper">
-    <h1 id="title">Tennessee Trivia Game</h1>
-    <div id="subwrapper">
-        <button id="start">Start</button>
-    </div>  
-</div>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-
-</body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-</html>
+<body>
+    <div class="container">
+    <div class="wrapper">
+     <div class="row">
+        <div class="col-sm-4">
+        <h1 id='title'>Tennessee Trivia Game</h1>
+        </div>
+        <!-- <div class="col-sm-8">
+            <img src="images/tennessee.png" alt="Tennessee Image">
+        </div> -->
+    </div>
+        <br/>
+        <br/>
+        <div id="display">Time left: 30 seconds</div>
+        <br/>
+            <div class="row">
+                <div class="span9">
+                  <h4>What is the capital of Tennessee?</h4>
+                    <div class="row">
+                        <div class="span9">
+                                <!-- Default inline 1-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="c1" name="Capital" value="Memphis">
+                                    <label class="custom-control-label" for="c1">Memphis</label>
+                                </div>
+
+                                <!-- Default inline 2-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="c2" name="Capital" value="Nashville">
+                                    <label class="custom-control-label" for="c2">Nashville</label>
+                                </div>
+
+                                <!-- Default inline 3-->
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="c3" name="Capital" value="Chattanooga">
+                                    <label class="custom-control-label" for="c3">Chattanooga</label>
+                                </div>
+                        </div><!--span9.2-->
+                    </div><!--row2-->
+                </div><!--span9.1-->
+            </div><!--row1-->
+            <br/>
+            <br/>
+
+            <div class="row">
+                    <div class="span9">
+                      <h4>What is the state flower of Tennessee?</h4>
+                        <div class="row">
+                            <div class="span9">
+                                    <!-- Default inline 1-->
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="f1" name="flower" value="Lily">
+                                        <label class="custom-control-label" for="f1">Lily</label>
+                                    </div>
+
+                                    <!-- Default inline 2-->
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="f2" name="flower" value="Tulip">
+                                        <label class="custom-control-label" for="f2">Tulip</label>
+                                    </div>
+
+                                    <!-- Default inline 3-->
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="f3" name="flower" value="Irises">
+                                        <label class="custom-control-label" for="f3">Irises</label>
+                                    </div>
+                            </div><!--span9.2-->
+                        </div><!--row2-->
+                    </div><!--span9.1-->
+                </div><!--row1-->
+                <br/>
+                <br/>
+
+
+                <div class="row">
+                        <div class="span9">
+                          <h4>What is the state bird of Tennessee?</h4>
+                            <div class="row">
+                                <div class="span9">
+                                        <!-- Default inline 1-->
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="b1" name="bird" value="Northern Mockingbird">
+                                            <label class="custom-control-label" for="b1">Northern Mockingbird</label>
+                                        </div>
+
+                                        <!-- Default inline 2-->
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="b2" name="bird" value="Blue Jay">
+                                            <label class="custom-control-label" for="b2">Blue Jay</label>
+                                        </div>
+
+                                        <!-- Default inline 3-->
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="b3" name="bird" value="Hummingbird">
+                                            <label class="custom-control-label" for="b3">Hummingbird</label>
+                                        </div>
+                                </div><!--span9.2-->
+                            </div><!--row2-->
+                        </div><!--span9.1-->
+                    </div><!--row1-->
+                    <br/>
+                    <br/>
+
+                    <div class="row">
+                            <div class="span9">
+                              <h4>What is the country's most visited National Park?</h4>
+                                <div class="row">
+                                    <div class="span9">
+                                            <!-- Default inline 1-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="p1" name="park" value="Acadia National Park">
+                                                <label class="custom-control-label" for="p1">Acadia National Park</label>
+                                            </div>
+
+                                            <!-- Default inline 2-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="p2" name="park" value="Big Bend National Park">
+                                                <label class="custom-control-label" for="p2">Big Bend National Park</label>
+                                            </div>
+
+                                            <!-- Default inline 3-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="p3" name="park" value="Great Smoky Mountains National Park">
+                                                <label class="custom-control-label" for="p3">Great Smoky Mountains National Park</label>
+                                            </div>
+                                    </div><!--span9.2-->
+                                </div><!--row2-->
+                            </div><!--span9.1-->
+                        </div><!--row1-->
+                        <br/>
+                        <br/>
+
+                        <div class="row">
+                            <div class="span9">
+                              <h4>What street in Tennessee is famous for Blues Clubs?</h4>
+                                <div class="row">
+                                    <div class="span9">
+                                            <!-- Default inline 1-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="bc1" name="blues club" value="Cedar Lane">
+                                                <label class="custom-control-label" for="bc1">Cedar Lane</label>
+                                            </div>
+
+                                            <!-- Default inline 2-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="bc2" name="blues club" value="Beale Street">
+                                                <label class="custom-control-label" for="bc2">Beale Street</label>
+                                            </div>
+
+                                            <!-- Default inline 3-->
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="bc3" name="blues club" value="Abbey Road">
+                                                <label class="custom-control-label" for="bc3">Abbey Road</label>
+                                            </div>
+                                    </div><!--span9.2-->
+                                </div><!--row2-->
+                            </div><!--span9.1-->
+                        </div><!--row1-->
+                        <br/>
+                        <br/>
+
+ </div><!--wrapper-->
+ </div><!--container-->
+            
+ <script src="assets/javascript/main.js"></script>
+            
+            
+ </body>
+ </html>
